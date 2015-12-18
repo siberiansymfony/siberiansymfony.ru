@@ -38,3 +38,6 @@
 /composer.phar
 
 /.idea
+/web/lib/bootstrap/node_modules
+/web/lib/bootstrap/docs
+/web/lib/bootstrap/dist
