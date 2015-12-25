@@ -8,6 +8,8 @@
         <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
     </head>
     <body>
+        {{ render(controller('PageBundle:Partial:header')) }}
+
         {% block body %}{% endblock %}
         <script src="{{ asset('lib/bootstrap/dist/js/bootstrap.min.js') }}"></script>
         {% block javascripts %}{% endblock %}
