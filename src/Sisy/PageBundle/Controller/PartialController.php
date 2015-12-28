@@ -15,12 +15,7 @@ class PartialController extends Controller
      */
     public function headerAction(Request $request)
     {
-        // TODO: Вынести куданибудь в конфиг
-        $menu = [
-            ['@homepage' => 'Главная'],
-            ['#'         => 'Статьи'],
-            ['#'         => 'Уроки'],
-        ];
+        $menu = $this->container->getParameter('mainMenu');
 
         return $this->render('PageBundle:Partial:header.html.twig', [
             'menu' => $menu,

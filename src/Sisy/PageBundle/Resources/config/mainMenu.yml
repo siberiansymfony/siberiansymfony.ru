@@ -1,0 +1,13 @@
+parameters:
+  mainMenu:                                 # Menu array
+    left:                                   # Menu align
+      'homepage':                           # Route name
+        caption: Главная                    # Item caption
+        cloneToSubmenu: true                # Clone item to his submenu
+        submenu:                            # Submenu array
+          '#': { caption: Подглавная }      # Submenu item (same as parent)
+      '#': { caption: Статьи }              # Other item
+      '#': { caption: Уроки }               # Other item
+
+    right:                                  # Menu align (right side)
+      '#': { caption: Войти }               # Menu item
